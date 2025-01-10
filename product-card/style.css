@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
@@ -13,6 +17,8 @@
 }
 
 .card {
+  max-width: 350px;
+  margin-inline: auto;
   background-color: #fbf7e3;
   border-radius: 100px;
   overflow: hidden;
@@ -20,7 +26,8 @@
 
 .container img {
   max-width: 100%; /* immagine responsive */
-  height: auto; /* Mantiene le proporzioni dell'immagine */
+  height: 330px; /* Mantiene le proporzioni dell'immagine */
+  object-fit: cover;
 }
 
 .container .content {
@@ -30,8 +37,8 @@
   align-items: center;
   padding-block: 30px;
   color: #4b3424;
-  font-size: bold;
 }
+
 .container p {
   margin: 0;
 }
@@ -41,11 +48,11 @@
 }
 
 .container button {
-  padding: 10px 50px;
+  padding: 10px 40px;
   background-color: #f3df85;
   border: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 25px;
   margin-bottom: 20px;
 }
